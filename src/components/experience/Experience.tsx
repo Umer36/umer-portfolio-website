@@ -3,9 +3,9 @@ import "./Experience.css"
 
 const Experience=():JSX.Element=> {
   return (
-    <div>
+    <section id='experience'>
       Expireince
-    </div>
+    </section>
   )
 }
 
