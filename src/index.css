@@ -37,6 +37,25 @@ body{
   line-height: 1.7;
   background-image: url(../src/Assets/bg-texture.png);
   overflow-x: hidden;
+  will-change: scroll-position;
+}
+
+/* Performance optimizations */
+.portfolio__item,
+.about__card,
+.experience__details,
+.service,
+.contact__option {
+  will-change: transform;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 html {

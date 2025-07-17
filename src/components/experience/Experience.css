@@ -250,6 +250,8 @@
     border: 1px solid rgba(77, 181, 255, 0.1);
     transition: var(--transition);
     cursor: pointer;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .experience__details:hover {

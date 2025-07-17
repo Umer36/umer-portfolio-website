@@ -261,12 +261,17 @@
 }
 
 @media screen and (max-width: 600px) {
+    #contact {
+        padding-bottom: 6rem;
+    }
+    
     .contact__container {
         width: 95%;
     }
     
     .contact__form {
         padding: 1.5rem;
+        margin-bottom: 2rem;
     }
     
     .contact__form input,
