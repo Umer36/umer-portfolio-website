@@ -68,11 +68,11 @@ const Services = (): JSX.Element => {
             <motion.article
               key={index}
               className='service'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -10 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              whileHover={{ y: -5 }}
             >
               <div className="service__head">
                 <IconComponent className='service__icon' />
@@ -83,10 +83,10 @@ const Services = (): JSX.Element => {
                 {service.features.map((feature, i) => (
                   <motion.li
                     key={i}
-                    initial={{ opacity: 0, x: -20 }}
+                    initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4, delay: (index * 0.2) + (i * 0.1) }}
-                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: (index * 0.1) + (i * 0.05) }}
+                    viewport={{ once: true, amount: 0.5 }}
                   >
                     <BiCheck className='service__list-icon' />
                     <p>{feature}</p>

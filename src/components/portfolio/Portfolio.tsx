@@ -99,11 +99,11 @@ const Portfolio = (): JSX.Element => {
           <TiltCard
             key={project.id}
             className='portfolio__item'
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            whileHover={{ y: -10 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            viewport={{ once: true, amount: 0.3 }}
+            whileHover={{ y: -5 }}
           >
             <div className="portfolio__item-image">
               <div className="placeholder-image">

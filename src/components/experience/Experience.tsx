@@ -28,11 +28,11 @@ const Experience = (): JSX.Element => {
       <div className="container work__experience">
         <motion.div
           className="work__card"
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: true }}
-          whileHover={{ scale: 1.02, y: -5 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          whileHover={{ scale: 1.01, y: -2 }}
         >
           <div className="work__header">
             <h3>Availity India</h3>
@@ -42,9 +42,9 @@ const Experience = (): JSX.Element => {
           <div className="work__positions">
             <motion.div
               className="position"
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
               viewport={{ once: true }}
             >
               <h4>Associate Software Engineer</h4>
@@ -60,9 +60,9 @@ const Experience = (): JSX.Element => {
             
             <motion.div
               className="position"
-              initial={{ opacity: 0, x: -30 }}
+              initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
               viewport={{ once: true }}
             >
               <h4>Software Engineer Trainee</h4>
@@ -82,9 +82,9 @@ const Experience = (): JSX.Element => {
       <div className="container experience__container">
         <motion.div
           className="experience__frontend"
-          initial={{ opacity: 0, x: -100 }}
+          initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
           viewport={{ once: true }}
         >
           <h3>Frontend Development</h3>
@@ -183,9 +183,9 @@ const Experience = (): JSX.Element => {
 
         <motion.div
           className="experience__backend"
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <h3>Backend Development</h3>

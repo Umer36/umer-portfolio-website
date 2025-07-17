@@ -4,7 +4,7 @@ import './Nav.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
-import {RiServiceLine} from 'react-icons/ri'
+import {VscFolderLibrary} from 'react-icons/vsc'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 
 const Nav = (): JSX.Element => {
@@ -52,7 +52,7 @@ const Nav = (): JSX.Element => {
     { href: '#', icon: AiOutlineHome, label: 'Home' },
     { href: '#about', icon: AiOutlineUser, label: 'About' },
     { href: '#experience', icon: BiBook, label: 'Experience' },
-    { href: '#services', icon: RiServiceLine, label: 'Services' },
+    { href: '#portfolio', icon: VscFolderLibrary, label: 'Portfolio' },
     { href: '#contact', icon: BiMessageSquareDetail, label: 'Contact' }
   ];
 

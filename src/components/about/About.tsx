@@ -62,11 +62,11 @@ const About = (): JSX.Element => {
           <div className="about__cards">
             <motion.article
               className='about__card'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              whileHover={{ scale: 1.02, y: -2 }}
             >
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
@@ -75,11 +75,11 @@ const About = (): JSX.Element => {
 
             <motion.article
               className='about__card'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ duration: 0.3, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.3 }}
+              whileHover={{ scale: 1.02, y: -2 }}
             >
               <FiUsers className='about__icon'/>
               <h5>Clients</h5>
@@ -88,11 +88,11 @@ const About = (): JSX.Element => {
 
             <motion.article
               className='about__card'
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, y: -5 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
+              whileHover={{ scale: 1.02, y: -2 }}
             >
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
