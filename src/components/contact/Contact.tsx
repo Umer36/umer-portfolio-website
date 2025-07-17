@@ -76,7 +76,7 @@ const Contact = (): JSX.Element => {
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>umerymomin@gmail.com</h5>
-            <a href="mailto:umer.momin@example.com" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="umerymomin@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
           </motion.article>
 
           <motion.article
@@ -104,7 +104,7 @@ const Contact = (): JSX.Element => {
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+91 7020084368</h5>
-            <a href="https://api.whatsapp.com/send?phone=+91XXXXXXXXXX" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="https://api.whatsapp.com/send?phone=+917020084368" target="_blank" rel="noreferrer">Send a message</a>
           </motion.article>
         </motion.div>
 

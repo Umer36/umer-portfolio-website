@@ -1,0 +1,190 @@
+#services {
+    background: radial-gradient(ellipse at center, var(--color-bg-variant) 0%, var(--color-bg) 70%);
+    position: relative;
+    overflow: hidden;
+}
+
+#services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="0.5" fill="%234db5ff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+#services h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-light);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(45deg, var(--color-primary), #00d4ff, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4rem;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 30px rgba(77, 181, 255, 0.5);
+    line-height: 1.1;
+}
+
+#services h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    border-radius: 2px;
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.service {
+    background: rgba(77, 181, 255, 0.05);
+    border-radius: 2rem;
+    border: 1px solid rgba(77, 181, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    animation: float 10s ease-in-out infinite;
+    height: fit-content;
+}
+
+.service:nth-child(1) { animation-delay: -1s; }
+.service:nth-child(2) { animation-delay: -4s; }
+.service:nth-child(3) { animation-delay: -7s; }
+
+.service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(77, 181, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    animation: shimmer 6s infinite;
+}
+
+.service:hover {
+    background: rgba(77, 181, 255, 0.1);
+    border-color: var(--color-primary);
+    box-shadow: 0 25px 50px rgba(77, 181, 255, 0.3);
+}
+
+.service__head {
+    background: var(--color-primary);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.service__head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: var(--transition);
+}
+
+.service:hover .service__head::before {
+    left: 100%;
+}
+
+.service__icon {
+    font-size: 2rem;
+    color: var(--color-bg);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.service__head h3 {
+    color: var(--color-bg);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.service__list {
+    padding: 0;
+    list-style: none;
+}
+
+.service__list li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    align-items: flex-start;
+}
+
+.service__list-icon {
+    color: var(--color-primary);
+    margin-top: 2px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.service__list p {
+    color: var(--color-light);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .service {
+        padding: 1.5rem;
+    }
+    
+    .service__head {
+        padding: 1.5rem;
+    }
+    
+    #services h2 {
+        font-size: 2.5rem;
+    }
+}
