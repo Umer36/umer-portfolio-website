@@ -76,7 +76,7 @@ const Contact = (): JSX.Element => {
             <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>umerymomin@gmail.com</h5>
-            <a href="umerymomin@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="mailto:umerymomin@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
           </motion.article>
 
           <motion.article
