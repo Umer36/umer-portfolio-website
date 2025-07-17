@@ -235,3 +235,67 @@
     background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
     border-radius: 2px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .about__me {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .about__cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #about h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about__container {
+        gap: 2rem;
+    }
+    
+    .about__me {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about__card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .about__card h5 {
+        font-size: 1rem;
+    }
+    
+    .about__card small {
+        font-size: 0.8rem;
+    }
+    
+    .about__content p {
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: left;
+        margin: 1.5rem 0 2rem;
+    }
+    
+    .about__content .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

@@ -70,7 +70,7 @@ const About = (): JSX.Element => {
             >
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>2+ Years Working</small>
             </motion.article>
 
             <motion.article
@@ -83,7 +83,7 @@ const About = (): JSX.Element => {
             >
               <FiUsers className='about__icon'/>
               <h5>Clients</h5>
-              <small>50+ Worldwide</small>
+              <small>10+ Worldwide</small>
             </motion.article>
 
             <motion.article
@@ -96,7 +96,7 @@ const About = (): JSX.Element => {
             >
               <VscFolderLibrary className='about__icon'/>
               <h5>Projects</h5>
-              <small>5+ Completed</small>
+              <small>8+ Completed</small>
             </motion.article>
           </div>
 

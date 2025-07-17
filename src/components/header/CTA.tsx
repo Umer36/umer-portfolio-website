@@ -1,10 +1,10 @@
 import React from 'react'
-import CV from './Umercv25pdf.pdf'
+import CV from './UmerResume25.pdf'
 
 const CTA=():JSX.Element=> {
   return (
     <div className='cta'>
-      <a href={CV} download className='btn btn-modern'>
+      <a href={CV} download="Umer_Momin_Resume.pdf" className='btn btn-modern'>
         <span className='btn-icon'>⬇</span>
         Download Resume
       </a>

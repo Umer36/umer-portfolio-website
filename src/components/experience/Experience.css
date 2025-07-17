@@ -296,6 +296,16 @@
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
     .work__header {
         flex-direction: column;
         gap: 1rem;
@@ -313,6 +323,25 @@
 }
 
 @media screen and (max-width: 600px) {
+    #about h2,
+    #experience h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about__me {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .about__card {
+        padding: 1.5rem;
+    }
+    
     .work__card {
         padding: 1.5rem;
     }
@@ -328,9 +357,5 @@
     .experience__frontend,
     .experience__backend {
         padding: 2rem 1rem;
-    }
-    
-    #experience h2 {
-        font-size: 2.5rem;
     }
 }

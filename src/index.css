@@ -195,8 +195,26 @@ img {
     width: var(--container-width-ms);
   }
 
+  section {
+    margin-top: 6rem;
+    padding: 1rem 0;
+  }
+
   section > h2{
     margin-top: 2rem;
-
+    font-size: 2rem;
+  }
+  
+  section > h5 {
+    font-size: 0.9rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
   }
 }
