@@ -1,30 +1,36 @@
-import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useRef } from 'react'
 import './scrollProgress.css'
 
 const ScrollProgress = () => {
-  const [scrollProgress, setScrollProgress] = useState(0)
+  const progressRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    let ticking = false
+
     const updateScrollProgress = () => {
-      const currentProgress = window.scrollY
-      const scrollHeight = document.body.scrollHeight - window.innerHeight
-      
-      if (scrollHeight) {
-        setScrollProgress((currentProgress / scrollHeight) * 100)
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const currentProgress = window.scrollY
+          const scrollHeight = document.body.scrollHeight - window.innerHeight
+          
+          if (scrollHeight && progressRef.current) {
+            const progress = (currentProgress / scrollHeight) * 100
+            progressRef.current.style.transform = `scaleX(${progress / 100})`
+          }
+          ticking = false
+        })
+        ticking = true
       }
     }
 
-    window.addEventListener('scroll', updateScrollProgress)
+    window.addEventListener('scroll', updateScrollProgress, { passive: true })
     return () => window.removeEventListener('scroll', updateScrollProgress)
   }, [])
 
   return (
-    <motion.div 
+    <div 
+      ref={progressRef}
       className="scroll-progress"
-      initial={{ scaleX: 0 }}
-      animate={{ scaleX: scrollProgress / 100 }}
-      transition={{ duration: 0.1 }}
     />
   )
 }

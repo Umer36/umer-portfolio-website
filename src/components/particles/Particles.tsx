@@ -1,30 +1,20 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import './particles.css'
 
 const Particles = () => {
-  const particles = Array.from({ length: 50 }, (_, i) => i)
+  const particles = Array.from({ length: 20 }, (_, i) => i)
 
   return (
     <div className="particles-container">
       {particles.map((particle) => (
-        <motion.div
+        <div
           key={particle}
           className="particle"
-          initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-            opacity: 0
-          }}
-          animate={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-            opacity: [0, 1, 0]
-          }}
-          transition={{
-            duration: Math.random() * 10 + 10,
-            repeat: Infinity,
-            ease: "linear"
+          style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 10}s`,
+            animationDuration: `${Math.random() * 10 + 15}s`
           }}
         />
       ))}
