@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/umer-portfolio-website/static/css/main.b16f619f.css",
-    "main.js": "/umer-portfolio-website/static/js/main.c7d86888.js",
+    "main.css": "/umer-portfolio-website/static/css/main.94f783b4.css",
+    "main.js": "/umer-portfolio-website/static/js/main.74031ccb.js",
     "static/js/787.a6e8d951.chunk.js": "/umer-portfolio-website/static/js/787.a6e8d951.chunk.js",
     "static/media/me.png": "/umer-portfolio-website/static/media/me.821ecddcb9953b46bf75.png",
     "static/media/me-about.jpg": "/umer-portfolio-website/static/media/me-about.fb4452e7f286d3636ef9.jpg",
     "static/media/UmerResume25.pdf": "/umer-portfolio-website/static/media/UmerResume25.b7c4535d4ba46da26519.pdf",
     "index.html": "/umer-portfolio-website/index.html",
-    "main.b16f619f.css.map": "/umer-portfolio-website/static/css/main.b16f619f.css.map",
-    "main.c7d86888.js.map": "/umer-portfolio-website/static/js/main.c7d86888.js.map",
+    "main.94f783b4.css.map": "/umer-portfolio-website/static/css/main.94f783b4.css.map",
+    "main.74031ccb.js.map": "/umer-portfolio-website/static/js/main.74031ccb.js.map",
     "787.a6e8d951.chunk.js.map": "/umer-portfolio-website/static/js/787.a6e8d951.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b16f619f.css",
-    "static/js/main.c7d86888.js"
+    "static/css/main.94f783b4.css",
+    "static/js/main.74031ccb.js"
   ]
 }
